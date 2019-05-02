@@ -15,3 +15,9 @@ module "networking" {
   vpc_public_cidrs = "${var.vpc_public_cidrs}"
   accessip = "${var.accessip}"
 }
+
+module "compute" {
+  source = "./compute"
+  key_name = "${var.key_name}"
+  public_key_path = "${var.public_key_path}"
+}

@@ -29,3 +29,11 @@ output "aws_subnet_cidr_blocks" {
 output "aws_public_sg_id" {
   value = "${module.networking.aws_public_sg_id}"
 }
+
+output "ssh_key_name" {
+  value = "${module.compute.key_name}"
+}
+
+output "aml_ami_id" {
+  value = "${module.compute.aml_ami_id}"
+}
