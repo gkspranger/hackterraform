@@ -22,6 +22,10 @@ output "aws_subnet_cidr_blocks" {
   value = "${aws_subnet.tf_public_subnet.*.cidr_block}"
 }
 
+output "aws_subnet_ids" {
+  value = "${aws_subnet.tf_public_subnet.*.id}"
+}
+
 output "aws_public_sg_id" {
   value = "${aws_security_group.tf_public_sg.id}"
 }

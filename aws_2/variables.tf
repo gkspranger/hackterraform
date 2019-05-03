@@ -8,3 +8,5 @@ variable "vpc_public_cidrs" {
 variable "accessip" {}
 variable "key_name" {}
 variable "public_key_path" {}
+variable "instance_count" {}
+variable "instance_type" {}

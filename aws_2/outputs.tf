@@ -3,7 +3,7 @@ output "bucket_name" {
 }
 
 output "aws_availability_zones" {
-  value = "${module.networking.aws_availability_zones}"
+  value = "${join(", ", module.networking.aws_availability_zones)}"
 }
 
 output "aws_vpc_id" {

@@ -6,6 +6,8 @@ vpc_public_cidrs = [
   "10.10.10.0/24",
   "10.10.20.0/24"
 ]
-accessip = "73.121.0.0/16"
+accessip = "0.0.0.0/0"
 key_name = "gspranger"
 public_key_path = "~/.ssh/terraform_rsa.pub"
+instance_count = 1
+instance_type = "t2.micro"

@@ -20,4 +20,8 @@ module "compute" {
   source = "./compute"
   key_name = "${var.key_name}"
   public_key_path = "${var.public_key_path}"
+  instance_count = "${var.instance_count}"
+  instance_type = "${var.instance_type}"
+  security_group  = "${module.networking.aws_public_sg_id}"
+  subnet_ids      = "${module.networking.aws_subnet_ids}"
 }
