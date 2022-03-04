@@ -26,11 +26,11 @@ variable "mystring" {
 # }
 
 locals {
-  mylocal = {
+  mystring = {
     mystring = var.mystring
   }
 }
 
-output "myoutput" {
-  value = local.mylocal
+output "mystring" {
+  value = local.mystring
 }
